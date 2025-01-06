@@ -1,0 +1,10 @@
+name: 'GitHub Actions POM Parser'
+description: 'Reads a pom.xml file and extracts Maven dependencies'
+inputs:
+  pom-path:
+    description: 'Path to the pom.xml file'
+    required: false
+    default: './pom.xml'
+runs:
+  using: 'node16'
+  main: 'index.js'
