@@ -1,6 +1,10 @@
 name: 'GitHub Actions POM Parser'
 description: 'Reads a pom.xml file and extracts Maven dependencies'
 inputs:
+  cve-api-url:
+    description: 'Base URL for the CVE API'
+    required: false
+    default: 'http://35.211.68.143:8086/api/cve/list/'
   pom-path:
     description: 'Path to the pom.xml file'
     required: false
