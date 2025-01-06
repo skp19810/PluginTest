@@ -21,7 +21,7 @@ async function run() {
 
         // Debugging: Log the parsed POM structure
         core.info('Parsed POM structure:');
-        core.info(JSON.stringify(parsedPom, null, 2));
+       // core.info(JSON.stringify(parsedPom, null, 2));
 
         // Step 4: Check if dependencies exist
         const dependencies = parsedPom.project.dependencies?.[0]?.dependency;
