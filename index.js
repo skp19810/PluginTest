@@ -40,7 +40,7 @@ async function run() {
             core.info(`Dependency: ${gav}`);
 
             // Step 5: Fetch CVE-IDs via API
-            const cveApiUrl = `http://35.211.68.143:8086/api/cve/list/${gav}`;
+            const cveApiUrl = `http://34.36.241.194:80/api/vuln/cve/list/${gav}`;
             try {
                 const response = await axios.get(cveApiUrl);
                 const cveData = response.data;
